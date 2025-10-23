@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 int soma(int n1, int n2){
-    return n1 + n2;}
+    return n1 + n2;};
+
+int subtrair(int n1, int n2){
+    return n1 - n2;};
+
 
 int main(){
 
@@ -12,5 +16,10 @@ int main(){
  
     resultado = soma(n1, n2);
     printf("A soma de %d e %d e: %d\n", n1, n2, resultado);
+
+    printf("Insira dois numeros inteiros: ");
+    scanf("%d %d", &n1, &n2);
+    resultado = subtrair(n1, n2);
+    printf("A subtracao de %d e %d e: %d\n", n1, n2, resultado);
     return 0;
 }
